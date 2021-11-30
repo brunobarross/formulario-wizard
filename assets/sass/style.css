@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+span {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  min-height: 600px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.formulario {
+  max-width: 500px;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  background: #956AA7;
+}
+@media (max-width: 600px) {
+  .formulario {
+    max-width: 100%;
+    width: 90%;
+  }
+}
+.formulario__texto-one {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.formulario__texto-one h2 {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 600;
+}
+.formulario__texto-one span {
+  color: #CBEDEF;
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+.formulario__texto-one span span {
+  color: #fff;
+}
+.formulario__texto p {
+  font-size: 1rem;
+  color: #fff;
+  padding-top: 1rem;
+}
+.formulario__estados {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 16px;
+  margin-top: 2rem;
+}
+@media (max-width: 600px) {
+  .formulario__estados {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.formulario__estados-item {
+  border: 1px solid #fff;
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.formulario__estados-item span {
+  color: #fff;
+}
+.formulario__wrapper {
+  display: none;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  margin-top: 2.5rem;
+}
+@media (max-width: 600px) {
+  .formulario__wrapper {
+    flex-direction: column;
+  }
+}
+.formulario__wrapper .input__box input {
+  width: 100%;
+  padding: 16px 24px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.formulario__wrapper .input__select select {
+  background-color: #fff;
+  width: 100%;
+  padding: 16px 24px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.formulario.step2 .formulario__estados {
+  display: none;
+}
+
+.formulario.step2 .formulario__wrapper {
+  display: grid;
+}
+@media (max-width: 600px) {
+  .formulario.step2 .formulario__wrapper {
+    display: flex;
+  }
+}/*# sourceMappingURL=style.css.map */

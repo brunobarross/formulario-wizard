@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/sass/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <div class="formulario">
+        <div class="container">
+            <div class="formulario__texto">
+                <nav class="formulario__texto-one">
+                    <h2>Faça seu orçamento</h2>
+                    <span class="step">1 <span>de</span> 2</span>
+                </nav>
+                <p class="texto__saida">Selecione seu Estado</p>
+              
+            </div>
+            <div class="formulario__estados">
+                <div class="formulario__estados-item" id="rio" data-estado="RJ">
+                    <span>RJ</span>
+                </div>
+                <div class="formulario__estados-item" id="sp" data-estado="SP">
+                    <span>SP</span>
+                </div>
+            </div>
+            <form action="" class="formulario__wrapper">
+                <div class="input__box">
+                    <input type="text" id="nome" placeholder="Nome">
+                </div>
+                <div class="input__box">
+                    <input type="email" id="email" placeholder="Email">
+                </div>
+                <div class="input__box">
+                    <input type="text" id="telefone" placeholder="Telefone">
+                </div>
+                <div class="input__select">
+                    <select id="cidade">
+                        <option value="0">Cidade</option>
+                    </select>
+                </div>
+
+                <div class="input__select">
+                    <select id="segmento">
+                        <option value="0">Segmento</option>
+                    </select>
+                </div>
+                <div class="input__select">
+                    <select id="faixa">
+                        <option value="0">Faixa de consumo</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+    </div>
+<script src="assets/js/script.js"></script>
+</body>
+
+</html>
